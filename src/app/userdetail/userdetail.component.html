@@ -1,0 +1,11 @@
+<h1>User Details:</h1>
+<hr />
+<div *ngIf="singleuser.hasOwnProperty('firstname')">
+  <b>First Name: </b>  {{ singleuser.firstname }} <br /><br />
+  <b>Last Name: </b>  {{ singleuser.lastname }} <br /><br />
+  <b>Address: </b> {{ singleuser.address }} <br /><br />
+  <b>Postcode: </b>  {{ singleuser.postcode }} <br /><br />
+</div>
+<p *ngIf="!singleuser.hasOwnProperty('firstname')">
+   Please select a postcode
+</p>
